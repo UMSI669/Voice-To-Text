@@ -1,0 +1,38 @@
+export const audioSamples = [
+  {
+    id: "order-confirmation",
+    filename: "Audio1-order-confirmation.wav",
+    expectedText: "Confirming purchase order SKU dash zero nine four B as in Bravo. Total amount is forty-two thousand, five hundred dollars and fifty cents. Deliver to standard HTTP protocol endpoint at API dot company dot io slash v two.",
+    asset: require("../../assets/audio/Audio1-order-confirmation.wav"),
+    phoneNativeFilename: "Audio1-order-confirmation-16k-mono.wav",
+    phoneNativeAsset: require("../../assets/audio/Audio1-order-confirmation-16k-mono.wav"),
+    language: "en-US",
+  },
+  {
+    id: "reschedule",
+    filename: "Audio2-reschedule.wav",
+    expectedText: "So we need to... wait, no. Let's schedule the meeting for Tuesday at... uh... three PM. Actually, scratch that, make it Wednesday morning at ten instead.",
+    asset: require("../../assets/audio/Audio2-reschedule.wav"),
+    phoneNativeFilename: "Audio2-reschedule-16k-mono.wav",
+    phoneNativeAsset: require("../../assets/audio/Audio2-reschedule-16k-mono.wav"),
+    language: "en-US",
+  },
+  {
+    id: "luggage",
+    filename: "Audio3-luggage.wav",
+    expectedText: "They're going to put their luggage over there. Whether the weather is good or not, we'll see if the sea is calm enough for the four of us to buy two tickets too.",
+    asset: require("../../assets/audio/Audio3-luggage.wav"),
+    phoneNativeFilename: "Audio3-luggage-16k-mono.wav",
+    phoneNativeAsset: require("../../assets/audio/Audio3-luggage-16k-mono.wav"),
+    language: "en-US",
+  },
+  {
+    id: "cups-in-fake-boston",
+    filename: "Audio4-cups-in-fake-boston.wav",
+    expectedText: "Park the car in Harvard Yard, and pick up them extra large coffee cups before the three o'clock meeting on the fourth floor",
+    asset: require("../../assets/audio/Audio4-cups-in-fake-boston.wav"),
+    phoneNativeFilename: "Audio4-cups-in-fake-boston-16k-mono.wav",
+    phoneNativeAsset: require("../../assets/audio/Audio4-cups-in-fake-boston-16k-mono.wav"),
+    language: "en-US",
+  },
+];

@@ -2,12 +2,18 @@
   "expo": {
     "name": "vtt-demo",
     "slug": "vtt-demo",
+    "scheme": "vtt-demo",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.classroom.vttdemo",
+      "infoPlist": {
+        "NSSpeechRecognitionUsageDescription": "Allow vtt-demo to use speech recognition.",
+        "NSMicrophoneUsageDescription": "Allow vtt-demo to use the microphone."
+      }
     },
     "android": {
       "adaptiveIcon": {
@@ -15,10 +21,34 @@
         "foregroundImage": "./assets/android-icon-foreground.png",
         "backgroundImage": "./assets/android-icon-background.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"
-      }
+      },
+      "permissions": [
+        "android.permission.RECORD_AUDIO",
+        "android.permission.MODIFY_AUDIO_SETTINGS"
+      ],
+      "package": "com.classroom.vttdemo"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      "expo-router",
+      "expo-status-bar",
+      [
+        "expo-audio",
+        {
+          "microphonePermission": "Allow vtt-demo to record audio.",
+          "enableBackgroundPlayback": false
+        }
+      ],
+      "expo-asset",
+      [
+        "expo-speech-recognition",
+        {
+          "microphonePermission": "Allow vtt-demo to use the microphone.",
+          "speechRecognitionPermission": "Allow vtt-demo to use speech recognition."
+        }
+      ]
+    ]
   }
 }
