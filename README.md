@@ -48,7 +48,7 @@ npx expo start
 ```
 
 Build and install the native development client on a connected iPhone:
-
+_Works best when the phone is physically connected to your dev computer._
 ```sh
 npx expo run:ios --device
 ```
@@ -59,13 +59,14 @@ npx expo run:ios
 
 
 Build and install the native development client on a connected Android:
+_Works best when the phone is physically connected to your dev computer._
 
 ```sh
-npx expo run:ios --device
+npx expo run:android --device
 ```
 Android emulator
 ```sh
-npx expo run:ios
+npx expo run:android
 ```
 
 
