@@ -135,12 +135,3 @@ npx expo lint
 npx tsc --noEmit
 npx expo-doctor
 ```
-
-This classroom demo does not include an automated test suite. Physical-device checks are still required for:
-
-- iOS operating-system microphone recognition, permission denial, repeated final event handling, and navigation cleanup.
-- Phone-native transcription of the converted 16 kHz mono WAV copies on an iOS 17+ physical device.
-- Local Whisper tiny.en model download, inference from microphone WAV and all four current sample WAVs, cancellation, and memory/performance.
-- Cloud model-list UI with credentials and an authorized cloud WAV request using `qwen/qwen3-asr-0.6b`, followed by authorized microphone transcription.
-- Expo fetch/FormData upload and OpenRouter response parsing on a physical phone, with an authorized cloud request.
-- Empty/error model lists, missing `.env`, and retry/manual-refresh behavior in the built app.
